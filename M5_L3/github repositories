@@ -1,0 +1,54 @@
+1-masala
+            try:
+                a, b = map(int, input().split())
+            except ValueError:
+                print("Invalid input. Please enter two integers.")
+                exit()
+            
+            arifmetik = (a + b) / 2
+            geometrik = (a * b) ** 0.5
+            
+            if arifmetik > geometrik:
+                print(">")
+            elif arifmetik < geometrik:
+                print("<")
+            else:
+                print("=")
+2-masala
+            n = (input())
+            gugurts_count = {
+                '0': 6, '1': 2, '2': 5, '3': 5, '4': 4,
+                '5': 5, '6': 6, '7': 3, '8': 7, '9': 6
+            }
+            
+            total_gugurts = sum(gugurts_count[digit] for digit in n)
+            print(total_gugurts)
+3-masala
+            with open('input.txt', 'r') as input_file:
+              n = int(input_file.readline().strip())
+        
+            sticks = list(map(int, input_file.readline().split()))
+        
+            min_index = sticks.index(min(sticks))
+            max_index = sticks.index(max(sticks))
+            
+            min_sum = sum(sticks[:min_index] + sticks[min_index + 1:])
+            max_sum = sum(sticks[:max_index] + sticks[max_index + 1:])
+            
+            if max_sum > min_sum:
+                result_order = sticks[min_index:] + sticks[:min_index]
+                result_str = ' '.join(map(str, result_order))
+            
+                with open('output.txt', 'w') as output_file:
+                    output_file.write(result_str)
+            else:
+                with open('output.txt', 'w') as output_file:
+                    output_file.write('-1')
+4-masala
+            with open('input.txt', 'r') as input_file:
+                n = int(input_file.readline().strip())
+            
+            result = n**5 + 8*n**4 - 5*n**3 + 3*n**2 + n - 12
+            
+            with open('output.txt', 'w') as output_file:
+                output_file.write(str(result))
