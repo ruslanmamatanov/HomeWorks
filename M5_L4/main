@@ -1,0 +1,30 @@
+1-masala
+    n = int(input()) 
+    if n % 4 == 0:
+        print(n // 2) 
+    else:
+        print(-1)
+
+
+3-masala
+    n = int(input())
+
+    if n % 2 == 0:
+        result = "Second player"
+    else:
+        result = "First player"
+    
+    print(result)
+
+4-masala
+    gnom_tangalari = list(map(int, input().split()))
+    sovga_narxi = int(input())
+    
+    jami_tangalar = sum(gnom_tangalari)
+    kerakli_pul = max(0, sovga_narxi - jami_tangalar)
+    
+    print(kerakli_pul)
+
+
+
+5-masala
