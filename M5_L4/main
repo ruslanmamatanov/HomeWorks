@@ -5,6 +5,20 @@
     else:
         print(-1)
 
+2-masala
+
+    ball = int(input())
+    if ball >= 100:
+      print(100)
+    elif ball < 38:
+      print(ball)
+    elif (ball + 1) % 5 == 0:
+      print(ball + 1)
+    elif (ball + 2) % 5 == 0:
+      print(ball + 2)
+    else:
+      print(ball)
+
 
 3-masala
     n = int(input())
@@ -28,3 +42,6 @@
 
 
 5-masala
+
+    n = input()
+print(int(n) // 2 + 1)
